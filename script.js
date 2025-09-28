@@ -224,18 +224,26 @@ $('confirmPay').onclick = ()=>{
 function renderSuccess(x){
   $('successImg').src = x.img || '';
   $('successImg').onerror = function(){ fallbackExt(this); };
-  const L = $('successList'); L.innerHTML='';
+
+  const L = $('successList');
+  L.innerHTML = '';
+
   [
-    ['ชื่อผู้ใช้',x.user],
-    ['เบอร์', Users.all().find(u=>u.user===x.user)?.tel || '-'],
-    ['ทะเบียนรถ',x.plate],
-    ['ยี่ห้อ/รุ่น',x.brand+' / '+x.model],
-    ['นำรถมาฝาก',dateTH(x.start)],
-    ['มารับรถ',dateTH(x.end)],
-    ['ยอดที่ชำระ',THB(x.total)+' บาท],
-    ['หมายเหตุ',x.note||'-']
-  ].forEach(([k,v])=>{ const b=document.createElement('b'); b.textContent=k; const d=document.createElement('div'); d.textContent=v; L.append(b,d); });
+    ['ชื่อผู้ใช้', x.user],
+    ['เบอร์', Users.all().find(u => u.user === x.user)?.tel || '-'],
+    ['ทะเบียนรถ', x.plate],
+    ['ยี่ห้อ/รุ่น', x.brand + ' / ' + x.model],
+    ['นำรถมาฝาก', dateTH(x.start)],
+    ['มารับรถ', dateTH(x.end)],
+    ['ยอดที่ชำระ', THB(x.total) + ' บาท'],
+    ['หมายเหตุ', x.note || '-']
+  ].forEach(([k, v]) => {
+    const b = document.createElement('b');  b.textContent = k;
+    const d = document.createElement('div'); d.textContent = v;
+    L.append(b, d);
+  });
 }
+
 
 // เสร็จสิ้น → กลับหน้าแรก
 $('finishBtn').onclick = ()=>{
