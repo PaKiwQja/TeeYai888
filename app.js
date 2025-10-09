@@ -176,8 +176,12 @@ function renderHistory(){
 
 // ===== Local Admin (username/password ภายใน) =====
 const ADMINS = [
-  { user: 'admin', pass: '1234' },
+  { user: 'admin-lecturer', pass: '1234' },
   { user: 'admin-Q', pass: '4105' },
+  { user: 'admin-OIL', pass: '4070' },
+  { user: 'admin-BOOKBIG', pass: '4085' },
+  { user: 'admin-NUT', pass: '4094' },
+  { user: 'admin-GIG', pass: '4077' },
 ];
 $id('adminBtn')?.addEventListener('click', ()=>{ showView('adminSection'); updateStatusBar(); });
 $id('adminBackHome')?.addEventListener('click', ()=> showView('homeSection'));
