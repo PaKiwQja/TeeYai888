@@ -176,7 +176,7 @@ function renderHistory(){
 
 // ===== Local Admin (username/password ภายใน) =====
 const ADMINS = [
-  { user: 'admin-lecturer', pass: '1234' },
+  { user: 'admin-Natarpha', pass: '1234' },
   { user: 'admin-Q', pass: '4105' },
   { user: 'admin-OIL', pass: '4070' },
   { user: 'admin-BOOKBIG', pass: '4085' },
