@@ -13,7 +13,8 @@ const ModelMap = {
     'Click 160': 'Moto/H Crilick-NB.png',
     'Forza 350': 'Moto/H forza-NB.png',
     'PCX 160': 'Moto/H pcx-NB.png',
-    'Scoopy i': 'Moto/H scoopy-NB.png'
+    'Scoopy i': 'Moto/H scoopy-NB.png',
+    'ทรงเชง' : 'Moto/H ทรงเชง.jpg'
   },
   YAMAHA: {
     'Aerox': 'Moto/Y aerox-NB.png',
